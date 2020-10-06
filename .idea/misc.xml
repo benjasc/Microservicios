@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/microservice-commons" />
+    <file type="web" url="file://$PROJECT_DIR$/microservice-eureka-server" />
+    <file type="web" url="file://$PROJECT_DIR$/microservice-oauth" />
+    <file type="web" url="file://$PROJECT_DIR$/microservice-users" />
+    <file type="web" url="file://$PROJECT_DIR$/microservice-zuul-gateway" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

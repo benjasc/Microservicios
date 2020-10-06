@@ -1,0 +1,2 @@
+INSERT INTO users (name, email, password, created_at, updated_at,last_login,is_active,token) VALUES('benjamin', 'benjamin.salazar17gmail.com', '$2a$10$hUi.hct5FkmtYk27M4WVcOz/4tOVDUNOVDcKiedTj/W8ii0vnHJhm', NOW(), NOW(), NOW(),'Y','');
+INSERT INTO phones (number, city_code,country_code, user_id) VALUES('123123','123', '1232',1);
