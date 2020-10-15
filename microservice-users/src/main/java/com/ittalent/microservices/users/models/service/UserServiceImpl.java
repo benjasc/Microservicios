@@ -27,8 +27,12 @@ public class UserServiceImpl implements IUserService {
 
     private Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
 
+    private final IUserRepository iUserRepository;
+
     @Autowired
-    private IUserRepository iUserRepository;
+    public UserServiceImpl(IUserRepository iUserRepository) {
+        this.iUserRepository = iUserRepository;
+    }
 
     @Override
     @Transactional(readOnly = true)
