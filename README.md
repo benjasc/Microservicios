@@ -5,6 +5,7 @@ Para la utilización de este proyecto debemos importar el modulo completo en Int
 
 Una vez importado el proyecto con sus módulos y dependencias respectivas debemos ir a /microservice-commons y ejecutar gradlew build en consola de la siguiente forma :
 Microservicios\microservice-commons>gradlew build
+
 Esto porque otros microservicios requieren de microservice-commons como dependencia para su funcionamiento. Cabe mencionar que microservice-commons No se debe levantar.
 
 Posterior a eso debemos proceder a ejecutar cada microservicio en el siguiente orden
