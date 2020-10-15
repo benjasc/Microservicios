@@ -4,7 +4,7 @@ Microservicios con SpringBoot
 Para la utilización de este proyecto debemos importar el modulo completo en Intellij Idea y cargar las dependencias gradle para el correcto funcionamiento.
 
 Una vez importado el proyecto con sus módulos y dependencias respectivas debemos ir a /microservice-commons y ejecutar gradlew build en consola de la siguiente forma :
-Microservicios\microservice-commons>gradlew build
+*Microservicios\microservice-commons>gradlew build
 
 Esto porque otros microservicios requieren de microservice-commons como dependencia para su funcionamiento. Cabe mencionar que microservice-commons No se debe levantar.
 
@@ -22,7 +22,7 @@ Una vez aparezcan ambas sabremos que ya está disponible, de lo contrario, en ca
 Una vez validemos que nuestros microservicios están levantados podremos ejecutar nuestros servicios REST.
 
 ------------------------------
-localhost:8090/api/users (persiste el usuario) (Unica ruta que no necesita autenticación)
+**localhost:8090/api/users (persiste el usuario) (Unica ruta que no necesita autenticación)**
 -Para probar podemos ir a PostMan y agregar el end-point mencionado (POST)
 -Luego vamos donde dice Body, seleccionamos raw , formato JSON y agregamos el siguiente request de ejemplo
 
@@ -56,7 +56,7 @@ Ejecutamos y ya podríamos ver un response con el siguiente formato
 }
 
 --------------------------------------------------
-localhost:8090/api/security/oauth/token -> A través de este servicio obtendremos el token para consultar los demás servicios, lo que debemos hacer es:
+**localhost:8090/api/security/oauth/token -> A través de este servicio obtendremos el token para consultar los demás servicios, lo que debemos hacer es:**
 -Ir a postman, agregar el end-point y seleccionar POST
 -Ir a la pestaña Authorization y seleccionar el type como "Basic Auth" y agregar las siguientes credenciales 
 Username = backendApp
@@ -68,10 +68,10 @@ password = 123
 grant_type = password
 
 cuando ya tengamos esto podemos presionar send para obtener nuestro token y consultar las demas apis que piden autorización como por ejemplo
-localhost:8090/api/users/1 (GET)
+**localhost:8090/api/users/1 (GET)**
 o
 
-localhost:8090/api/users/1 (PUT)
+**localhost:8090/api/users/1 (PUT)**
 con el request ejemplo para modificar,
 {
     "id": 1,
@@ -102,3 +102,8 @@ con el request ejemplo para modificar,
 
 
 -para agregar el token y consultar o modificar debemos ir a la pestaña Authorization, seleccionar el tipo Bearer Token y agregar el token obtenido desde el servicio de autenticación.
+
+
+**************** TEST UNITARIOS ***************
+Para el test getToken() de la clase UserServiceMockTest es necesario correr todos los microservicios, no así para los demas test.
+
